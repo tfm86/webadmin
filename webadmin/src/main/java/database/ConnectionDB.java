@@ -7,7 +7,8 @@ import java.sql.SQLException;
 
 public class ConnectionDB {
 
-	private String namedatabase = "/home/tiago/eclipse-workspace/webadmin/database/webadmindb.db";
+	//private String namedatabase = "/home/tiago/eclipse-workspace/webadmin/database/webadmindb.db";
+	private String namedatabase = "/home/tiago/git/repository3/webadmin/database/webadmindb.db"; //Github
 	String[] database = namedatabase.split("/");
 	private String url = "jdbc:sqlite:" + namedatabase;
 	private Connection connection = null;
