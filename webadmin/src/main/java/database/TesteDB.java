@@ -3,17 +3,15 @@ package database;
 
 import org.junit.jupiter.api.Test;
 
-import modelo.Cliente;
-
 public class TesteDB {
 
-//	@Test
-//	public void initDatabase() {
-//
-//		new ConnectionDB().Connect();
-//
-//	}
-//
+	@Test
+	public void initDatabase() {
+
+		new ConnectionDB().Connect();
+
+	}
+////
 //	@Test
 //	public void ListarCliente() throws Exception {
 //
@@ -88,16 +86,16 @@ public class TesteDB {
 //	}
 
 
-	@Test
-	public void ListaClienteDoc() throws Exception {
-
-		ClienteDAO dao = new ClienteDAO();
-		Cliente cliente = null;
-		cliente = dao.buscaClienteDocumento("777.777.777-77");
-		System.out.println(cliente.getNome());
-
-
-	}
+//	@Test
+//	public void ListaClienteDoc() throws Exception {
+//
+//		ClienteDAO dao = new ClienteDAO();
+//		Cliente cliente = null;
+//		cliente = dao.buscaClienteDocumento("777.777.777-77");
+//		System.out.println(cliente.getNome());
+//
+//
+//	}
 
 
 

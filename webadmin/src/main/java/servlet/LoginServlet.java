@@ -12,8 +12,10 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import modelo.UsuarioSistema;
 
+
 @WebServlet(urlPatterns = "/loginServlet")
 public class LoginServlet extends HttpServlet {
+
 
 	private static final long serialVersionUID = 1L;
 
@@ -22,12 +24,13 @@ public class LoginServlet extends HttpServlet {
 
 		String usuario = req.getParameter("usuario");
 		String senha = req.getParameter("senha");
-
+		
 		if (usuario != null && senha != null && !usuario.isEmpty() && !senha.isEmpty()) {
 
 			try {
+				
 				UsuarioSistema u = new UsuarioSistemaDAO().buscaUsuarioUser(usuario);
-
+				
 				if (usuario.equals(u.getLogin()) && senha.equals(u.getSenha())) {
 
 					HttpSession session = req.getSession();

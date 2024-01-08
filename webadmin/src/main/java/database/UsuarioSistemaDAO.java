@@ -35,7 +35,7 @@ public class UsuarioSistemaDAO {
 				o.setLogin(executeQuery.getString("login"));
 				o.setSenha(executeQuery.getString("senha"));
 				o.setDataCriacao(executeQuery.getString("dataCriacao"));
-
+				
 				lista.add(o);
 
 			}
@@ -47,6 +47,7 @@ public class UsuarioSistemaDAO {
 		}
 		connection.close();
 		return lista;
+	
 	}
 
 	public UsuarioSistema buscaUsuarioUser(String user) throws Exception {
